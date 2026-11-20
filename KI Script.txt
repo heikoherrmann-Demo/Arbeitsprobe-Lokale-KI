@@ -1,0 +1,112 @@
+Arbeitsprobe: KI für KMU ein Low Level Ansatz
+
+Folie 1 "Basics"
+	Header: Was sind KI Modell und wie entstehen sie?
+	Spalte1
+	Ki Modell trainieren		
+	- Erstellen von kompletten Modellen
+	- Beispiel wie ein Dataset aussieht
+	- Vorteile:
+		- Alles aus einem Guß
+		- Kann bedarfsgenau angepasst werden
+		- kann sehr klein und ressourcenschonden erstellt werden.
+	- Nachteile
+		- Hohe Kosten
+		- Benötigt einen Dataengeneer
+		- Basisdaten müssen beschafft / Lizenziert werden
+		- Benötigt Hohe Rechnkapazitäten um das Modell zu trainieren
+		- Aufwendiger Testzyklus um funktionalität sicherzustellen
+	
+	Resumee: Das ist extrem aufwendig und für ein normales KMU praktisch keine sinnvolle Option.
+	
+	Spalte2
+	Fine-Tuning von vorhanden Ki Modelle
+	- Anreichen von KI Modelle mit Benutzerinfromationen
+	- Beispieldaten eines json 
+	- Vorteile:
+		- geringere Kosten
+		- basiert auf Bewährtem
+		- Weniger Aufwand nur die 
+	- Nachteile
+		- Benötigt einen Dataengeneer
+		- Benötigt hohe Rechnkapazitäten um das Modell zu trainieren
+		- Aufwendiger Testzyklus um funktionalität sicherzustellen
+	
+	Resumee: Auch dieser Ansazu ist sehr aufwendig und für ein normales KMU praktisch keine sinnvolle Option.
+	
+		Bei allen oben genannten Methoden müssen neues Wissen immer wieder in das Modell trainiert werden.
+		
+Folie 2 "Online Recherche"
+	Header: "Kann ein vorhandenes KI Modell nicht einfach mein Intranet Seite/Betriebshandbuch durchsuchen und Fragen daraus beantworten?
+	
+	Chat GPT und Co
+		Datenschutz & Vertraunlichkeit:
+			Benutzt ChatGPT Prompts und Ergebnissen von Prompt als Traningsdaten zum trainieren von neuen Modellen?
+				Ja. Bei einem privaten ChatGPT-Konto können sowohl deine Prompts als auch die Antworten von ChatGPT ... zum Training verwendet werden.“
+		Kontrolle
+			Abhängigkeit vom Anbieter: Modellversion, Konfiguration und verfügbare Dienste können sich ändern und dadurch Verhalten, Qualität und Kosten beeinflussen.
+			
+		Abhängigkeiten
+			Bei sich änderten Geschäftsmodellen können schnell erhebliche schwer kalkulierbare Kosten entstehen
+		
+		
+Folie 3
+	Header: Ein lokaler Ansatz
+	
+	Was wäre wenn man ein KI Modell auf einem lokalen PC laufen lasst?
+	Vorteile:
+		Das Modell muss nicht das Unternehmenswissen enthalten.
+		volle Kontrolle über die Datennutzung
+		Es kann Wissen dynamisch durch Ändernung der Webseite/Betriebshandbuch hinzugefügt werden
+		Kein Abfluss von Betriebsgeheimnissen oder anderen interna
+		Kontrolle der IT Welche Dienste angeboten werden.
+		Kontrolle welche Ressourcen mit
+	Nachteile:
+		Modell wie Chatgpt, Gemma oder Claude; „Mythos“ sind nicht Open Source
+		Die GPU Ressourcen müssen vorhanden sein
+		Es müss entsprechend geschultes Personal vorhanden sein um einen solchen Dienst zu erstellen und administrieren
+	
+Folie 4: 
+	Header: Ein pragmativer Ansatz
+	LM Studio als Basis nehmen
+		Vorteile
+			Modell ausprobieren und das geeignete wählen
+			mit Hilfe von MCP/RAG Zugriff auf die Resourcen mit defninierten Zugriffsrechten erteilen
+			Scripting über die Rest API Möglich
+			Definierte Kosten: Hardware & Schulung, keine variablen Kosten
+		Nachteile
+			Allerdings: Beschränke Ressourcen = beschränke Antwortzeiten
+			Testen und Anpassen sind trotzdem nötig
+			
+		Ein KI-Modell bekommt niemals mehr Rechte, als es für seine Aufgabe benötigt.
+
+Folie 5 Automation 
+	Header
+	Rest API mit Powershell
+		Beispiel Powershell Rest API Abfrage
+
+Folie 6 Möglichkeiten & Beschränkungen
+	Header
+	Hacking von KI (Prompt Injection)
+	Nicht gewünschtes verhalten
+	Vorsichtiges Ausprobieren angeraten
+	
+Folie 7:
+	Header Remuee
+		Lokale KI für KMU
+		Unternehmensdaten bleiben lokal
+		Modell kann ausgetauscht werden
+		Unternehmenswissen muss nicht ins Modell trainiert werden
+		Wissen kann aktuell gehalten werden
+		Zugriffsrechte können begrenzt werden
+		Automatisierung über API möglich
+		Hardwarekosten sind planbar
+		Keine zwingende Abhängigkeit von einem Cloud-KI-Anbieter
+		kalukilierbare Kosten
+		mehr Kontrolle über den Einsatz
+		
+Folie 8 Begriffserklärung:
+	RAG: Retrieval-Augmented Generation
+	MCP: 
+	Rest API
+	

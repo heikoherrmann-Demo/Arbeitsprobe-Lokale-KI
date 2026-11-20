@@ -1,0 +1,43 @@
+Präsentation KI 25.08.2026 010:00
+
+- Präsentation zeigen
+
+LM Studio öffnen
+-	Download von Modellen
+		Was sind die "b"?
+			Das B steht für Billionen Parameter:
+				Ein 16B-Modell kann gegenüber einem 8B-Modell beispielsweise:
+					komplexere Zusammenhänge besser erfassen
+					schwierige Aufgaben besser lösen
+					häufig präzisere Antworten geben
+					komplexeren Code besser verstehen
+					bei mehrstufigem Reasoning Vorteile haben
+	- Welche Ki Modelle habe ich?
+		Warum unterschiedliche Modelle?
+			Datenquellen ...
+			Gewichtung in KI Modellen
+				Bei einem LLM bedeutet „Gewichtung“ (Weight) einen gespeicherten Zahlenwert innerhalb des neuronalen Netzes.
+					„Die Hauptstadt von Deutschland ist …“
+						Berlin → 0,97
+						München → 0,01
+						Hamburg → 0,005
+						Frankfurt → 0,005
+	Butter bei Fische: Chats
+		Laden des Modells
+			Context Length
+		Einstellungen Hardware: Vulkan!
+			Vulkan ist eine moderne Grafik- und Compute-Schnittstelle (API). Sie ermöglicht Programmen, direkt und effizient mit der GPU zu kommunizieren.
+		
+		Zeige mir den Inhalt der Datei test.txt
+		
+		Integration zeigen
+		
+		Beispiel 1: Tiny Modell
+		
+		Beispiel 2 Auslesen der Intranetseite COnfluence
+		
+		Beispiel 3: 
+		
+		MCP File & Server zeigen
+		
+		Powershell zeigen zeigen
